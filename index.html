@@ -12,13 +12,13 @@
 <body>
   <!-- Criando uma tabela com requisições AJAX e criando um formulário -->
   <div class="container">
-    <form>
+    <form id="formulario-pedido">
       <div class="row mt-5">
         <h4>Dados Básicos</h4>
       </div>
       <div class="row">
         <div class="col-3">
-          <input type="text" class="form-control" placeholder="Nome">
+          <input type="text" class="form-control" id="nome" placeholder="Nome">
         </div>
         <div class="col-5">
           <input type="text" class="form-control" placeholder="Sobrenome">
@@ -34,9 +34,8 @@
         <div class="col-3 d-flex">
           <input type="text" class="form-control" placeholder="CEP" id="cep" />
           <button type="button" class="btn btn-primary" id="btn-buscar-cep">
-            <i class="bi bi-search">
-              <span class="d-none spinner-border spinner-border-sm"></span>
-            </i>
+            <i class="bi bi-search"></i>
+            <span class="d-none spinner-border spinner-border-sm"></span>
           </button>
         </div>
         <div class="col-7">
